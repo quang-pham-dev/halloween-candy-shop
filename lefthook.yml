@@ -1,0 +1,17 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+#
+# pre-commit:
+parallel: true
+commands:
+  check:
+    run: pnpm run check --fix --no-errors-on-unmatched
+    stage_fixed: true
+  typecheck:
+    run: pnpm run typecheck
+  test:
+    run: pnpm run test
+  unused-code:
+    run: pnpm run check:unused

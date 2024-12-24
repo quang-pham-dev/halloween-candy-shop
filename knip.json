@@ -1,0 +1,11 @@
+{
+  "project": "halloween-candy-shop",
+  "entry": "src/main.tsx",
+  "output": "dist",
+  "assets": "public",
+  "devServer": {
+    "port": 1990,
+    "hot": true,
+    "open": false
+  }
+}
