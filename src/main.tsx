@@ -5,7 +5,7 @@ import { RouterProvider, createRouter } from "@tanstack/react-router"
 import { compress, decompress } from "lz-string"
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { scan } from "react-scan"
+// import { scan } from "react-scan" 
 
 import { DefaultCatchBoundary } from "@/components/default-catch-boundary"
 import { NotFound } from "@/components/not-found"
@@ -15,12 +15,13 @@ import { routeTree } from "./routeTree.gen"
 import "./index.css"
 import { Monitoring } from "react-scan/monitoring"
 
-if (typeof window !== "undefined") {
-	scan({
-		enabled: true,
-		alwaysShowLabels: true,
-	})
-}
+// Enable react-scan
+// if (typeof window !== "undefined") {
+// 	scan({
+// 		enabled: true,
+// 		alwaysShowLabels: true,
+// 	})
+// }
 
 const STALE_TIME = 5 * 60 * 1000 // 5m
 const RETRY_COUNT = 3
